@@ -1,0 +1,19 @@
+models:
+  - name: stg_stripe__payments
+    description: Staged payment data from our Stripe app. 
+    columns:
+      - name: payment_id
+        description: Primary key for payments. 
+        data_tests:
+          - unique
+          - not_null
+      - name: order_id
+        description: Foreign key to stg_jaffle_shop__orders.order_id
+      - name: payment_method
+        description: Method used for the payment.
+      - name: status
+        description: Whether the payment was successful or not. 
+      - name: amount
+        description: Value of the payment.
+      - name: created_at
+        description: Date the payment was made. 
