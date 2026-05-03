@@ -5,6 +5,6 @@ macros:
       - name: column_name
         description: "The name of the column containing the amount in cents"
         type: string
-      - name: decimal_places
+      - name: decimals
         description: "The number of decimal places to round the result to (default is 2)"
         type: integer
